@@ -194,15 +194,26 @@ export default {
             //   figure: (): Promise<any> => import("./el/figure-devops.vue"),
         },
         section5: {
-            id: "",
-            pretitle: "",
-            title: "",
-               titleIcon: "",
+            id: "software-as-code",
+            pretitle: "Open Source",
+            title: "Product A + Product B = ",
+            //   titleIcon: require("./img/custom-heart.svg"),
             items: [
-
+                {
+                    _item: "producta",
+                    //   image: require("./img/logo-producta.svg"),
+                    alt: "Product A",
+                    content: `Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.`,
+                },
+                {
+                    _item: "productb",
+                    //   image: require("./img/logo-productb.svg"),
+                    alt: "Product B",
+                    content: `Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.`,
+                },
             ],
-            syntaxTitle: "",
-               syntax: "",
+            syntaxTitle: "mycode.ts",
+            //   syntax: (): Promise<any> => import("./el/figure-infrastructure.vue"),
         },
         testimonials: {
             pretitle: "Ils parlent de mes services",

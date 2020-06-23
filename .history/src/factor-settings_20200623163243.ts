@@ -193,17 +193,7 @@ export default {
             ],
             //   figure: (): Promise<any> => import("./el/figure-devops.vue"),
         },
-        section5: {
-            id: "",
-            pretitle: "",
-            title: "",
-               titleIcon: "",
-            items: [
 
-            ],
-            syntaxTitle: "",
-               syntax: "",
-        },
         testimonials: {
             pretitle: "Ils parlent de mes services",
             title: "",
