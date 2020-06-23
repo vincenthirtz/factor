@@ -1,0 +1,30 @@
+{
+  "name": "blogjs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index",
+  "private": true,
+  "dependencies": {
+    "@factor/core": "^1.0.0",
+    "@factor/plugin-notify": "^1.0.0",
+    "@factor/plugin-seo": "^1.0.0",
+    "@factor/plugin-sitemap": "^1.0.0",
+    "@factor/plugin-contact-form": "^1.0.0",
+    "@factor/plugin-storage-s3": "^1.0.0",
+    "@factor/theme-zeno": "^1.8.14"
+  },
+  "factor": {
+    "app": {
+      "name": "Blog JS",
+      "description": "A super blog about JS ",
+      "email": "hirtzvincent@gmail.com"
+    },
+    "admins": [
+      "hirtzvincent@gmail.com"
+    ],
+    "load": [
+      "app",
+      "server"
+    ]
+  }
+}
