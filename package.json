@@ -18,8 +18,7 @@
   "scripts": {
     "dev": "npx factor dev",
     "build": "npx factor build",
-    "serve": "npx factor serve",
-    "prod": "npx factor start"
+    "start": "npx factor serve"
   },
   "factor": {
     "app": {
