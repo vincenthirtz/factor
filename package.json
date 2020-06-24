@@ -19,7 +19,7 @@
     "dev": "npx factor dev",
     "build": "npx factor build",
     "serve": "npx factor serve",
-    "prod": "/opt/plesk/node/6/bin/npm install -g npx && npx factor start"
+    "prod": "/opt/plesk/node/7/bin/npm install -g npx && npx factor start"
   },
   "factor": {
     "app": {
