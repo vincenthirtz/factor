@@ -473,7 +473,7 @@ export default {
         content:
             "Découvrez les dernières trouvailles, annonces, et articles de l'équipe",
         indexRoute: "/blog",
-        postRoute: "/entry",
+        postRoute: "/billet",
         limit: 6,
         returnLinkText: "Retour",
         notFound: {
@@ -498,9 +498,9 @@ export default {
         },
         metatags: {
             index: {
-                title: "Blog - The Latest from Zeno Theme",
+                title: "Blog - Vincent Hirtz",
                 description:
-                    "Discover the latest product updates, announcements, and articles from the Zeno team",
+                    "Découvrez les dernieres trouvailles, mises à jour et annonces",
                 // image: require("./img/logo-zeno.jpg"),
             },
         },
