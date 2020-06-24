@@ -15,6 +15,12 @@
     "@factor/theme-zeno": "^1.8.14",
     "@factor/ui": "^1.8.11"
   },
+  "scripts": {
+    "dev": "npx factor dev",
+    "build": "npx factor build",
+    "serve": "npx factor serve",
+    "prod": "npx factor start"
+  },
   "factor": {
     "app": {
       "name": "Blog JS",
