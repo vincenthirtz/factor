@@ -6,16 +6,9 @@ export default {
         font:
             '<link href="https://fonts.googleapis.com/css?family=Maven+Pro:400,600,700&display=swap" rel="stylesheet" />',
     },
-    /**
-     * Tailwind CSS Config
-     */
-    tailwind: {
-        // config: require("./tailwind.config.js"),
-        // directives: require("./tailwind.css"),
-    },
     metatags: {
-        defaultTitle: "Zeno",
-        titleTemplate: "%s - Factor JS",
+        defaultTitle: "Vincent Hirtz",
+        titleTemplate: "%s - Vincent Hirtz",
     },
 
     /**
@@ -26,8 +19,8 @@ export default {
             //   header: (): Promise<any> => import("./header.vue"),
             //   footer: (): Promise<any> => import("./footer.vue"),
         },
-        // logo: require("./img/logo-zeno.svg"),
-        // logoInverse: require("./img/logo-zeno-inverse.svg"),
+        logo: require("./static/member0.jpg"),
+        logoInverse: require("./static/member0.jpg"),
         nav: [
             {
                 _item: "home",
@@ -70,7 +63,7 @@ export default {
          */
         cta: {
             title: "Travaillons ensemble",
-            content: `Gagnez du temps et commencez un site avec une base solide, puis personnalisez.. <i class="fas fa-rocket"></i>`,
+            content: `Gagnez du temps et commencez un site avec une base solide, puis personnalisez. <i class="fas fa-rocket"></i>`,
             buttons: [
                 {
                     _item: "contact",
@@ -87,52 +80,59 @@ export default {
      * Copy for the home page template.
      */
     home: {
-        // component: (): Promise<any> => import("./home/v-home.vue"),
+        component: (): Promise<any> => import("./home.vue"),
         intro: {
             //   component: (): Promise<any> => import("./home/intro.vue"),
-            title: "Yo to Zeno, <br>SaaS Factor Theme",
+            title: "Bienvenue",
             content:
-                "Zeno is a minimalist theme suited for the needs of start-ups, tech businesses and SaaS companies. Styles are powered by Tailwind, a low-level CSS framework.",
+                "Nos solutions sonts adaptées aux besoins des start-ups, des entreprises non technologiques et des entreprises.",
             buttons: [
                 {
                     _item: "contact",
                     link: "/contact",
-                    text: "Contact Us",
+                    text: "Devis",
                     classes: "btn mr-4 text-purple-100 bg-purple-500 hover:bg-purple-600",
                 },
                 {
                     _item: "pricing",
                     link: "/pricing",
-                    text: "Pricing",
+                    text: "Prix",
                     classes:
                         "btn btn-ol border-purple-700 ml-0 mt-4 md:mt-0 hover:text-purple-500 hover:border-purple-500",
                 },
             ],
-            //   figure: require("./img/intro.svg"),
+              figure: require("./static/office.png"),
         },
         logos: {
-            title: "Working with the following clouds:",
+            title: "Outils",
             list: [
                 {
-                    _item: "aws",
-                    link: "https://aws.amazon.com/",
+                    _item: "ovh",
+                    link: "https://www.ovh.com/",
                     target: "_blank",
-                    //   image: require("./img/aws.svg"),
-                    alt: "Amazon Web Services",
+                      image: require("./static/ovh.png"),
+                    alt: "OVH",
                 },
                 {
-                    _item: "google",
-                    link: "https://cloud.google.com/",
+                    _item: "wordpress",
+                    link: "https://www.wordpress.com/",
                     target: "_blank",
-                    //   image: require("./img/google-cloud-platform.svg"),
-                    alt: "Google Cloud Platform",
+                    image: require("./static/wordpress.png"),
+                    alt: "Wordpress",
                 },
                 {
-                    _item: "digitalocean",
-                    link: "https://www.digitalocean.com/",
+                    _item: "react",
+                    link: "https://www.reactjs.org/",
                     target: "_blank",
-                    //   image: require("./img/digital-ocean.svg"),
-                    alt: "Digital Ocean",
+                    image: require("./static/react.png"),
+                    alt: "React",
+                },
+                {
+                    _item: "prestashop",
+                    link: "https://www.prestashop.com",
+                    target: "_blank",
+                    image: require("./static/prestashop.png"),
+                    alt: "Prestashop",
                 },
             ],
         },
@@ -161,7 +161,7 @@ export default {
                     _item: "gears",
                     //   icon: require("./img/gears.svg"),
                     title: "Automatique",
-                    content: `Chaque demande approuvée est automatiquement ajouté au calendrier et sera bientôt effective.`,
+                    content: `Chaque demande approuvée est automatiquement ajouté au calendrier et sera bientôt effective`,
                 },
                 {
                     _item: "clouds",
@@ -179,33 +179,22 @@ export default {
         },
         section4: {
             id: "software-as-a-service",
-            pretitle: "Software-as-a-Service",
-            title: "The last software you'll need!",
-            content: `<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>`,
+            pretitle: "Site clé en main",
+            title: "On s'occupe de tout!",
+            content: `<p>Un prix fixe mensuel qui vous assure une prestation qualitative et transparente.</p>`,
             buttons: [
                 {
                     _item: "contact",
                     link: "/contact",
-                    text: "Contact Us",
+                    text: "Contact",
                     classes:
                         "factor-link factor-link btn bg-purple-500 rounded text-white hover:bg-purple-600",
                 },
             ],
             //   figure: (): Promise<any> => import("./el/figure-devops.vue"),
         },
-        section5: {
-            id: "",
-            pretitle: "",
-            title: "",
-               titleIcon: "",
-            items: [
-
-            ],
-            syntaxTitle: "",
-               syntax: "",
-        },
         testimonials: {
-            pretitle: "Ils parlent de mes services",
+            pretitle: "Ils parlent de nous",
             title: "",
             items: [
                 {
@@ -236,31 +225,31 @@ export default {
      */
     about: {
         hero: {
-            pretitle: "About Theme Zeno",
-            title: "Built with Factor CMS",
-            content: `Zeno is a minimalist theme suited for the needs of IT companies and tech startups. Zeno styles are powered by Tailwind, a low-level CSS framework.`,
+            pretitle: "A propos",
+            title: "Comment on fonctionne",
+            content: `Nos solutions sonts adaptées aux besoins des start-ups, des entreprises non technologiques et des entreprises.`,
         },
-        // valuesImage1: require("./img/about1.jpg"),
-        // valuesImage2: require("./img/about2.jpg"),
-        valuesTitle: "A company with core values:",
+        valuesImage1: require("./static/city.png"),
+        valuesImage2: require("./static/world.png"),
+        valuesTitle: "Nos valeurs",
         values: [
             {
                 _item: "simplicity",
-                title: "Simplicity",
+                title: "Simple",
                 content:
-                    "Do more with less. Given the choice, choose minimization over maximization.",
+                    "Faire plus avec le minimum. Si vous avez le choix, choisissez la minimisation plutôt que la maximisation.",
             },
             {
                 _item: "karma",
-                title: "Karma",
+                title: "Responsable",
                 content:
-                    "Be as altruistic as possible. History has proven that karma works in mysterious ways.",
+                    "Soyez aussi responsable que possible. Le terrain nous as prouvé qu'un bon travail est tous récompensé.",
             },
             {
                 _item: "humility",
-                title: "Humility",
+                title: "Humilité",
                 content:
-                    "Continually assess and reassess the things you believe & actions you're taking. Never assume.",
+                    "Évaluez et réévaluez continuellement les choses que vous croyez et les mesures que vous prenez.",
             },
         ],
         team: {
@@ -268,76 +257,36 @@ export default {
              * The team layout has "grid" or "list" options
              */
             layout: "list",
-            pretitle: "Meet the Minds",
-            title: `The Team`,
+            pretitle: "En savoir plus",
+            title: `L'équipe`,
             members: [
                 {
                     _item: "member_1",
-                    //   photo: require("./img/member1.jpg"),
-                    title: "Co-Founder",
-                    name: "Zeno Elea 1",
+                      photo: require("./static/member0.jpg"),
+                    title: "Gérant",
+                    name: "Vincent Hirtz",
                     content:
-                        "custom element Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit",
+                        "Si je veux toujours en apprendre davantage sur l'évolution des technologies du web, l’envie de partager mon savoir acquis jusqu’à présent se fait de plus en plus grande. ",
                     links: [
                         {
                             _item: "link_1",
-                            path: "https://www.linkedin.com/",
+                            path: "https://www.linkedin.com/in/hirtzvincent/",
                             icon: "fab fa-linkedin",
                             target: "_blank",
                         },
                         {
                             _item: "link_2",
-                            path: "https://github.com/",
+                            path: "https://github.com/vincenthirtz",
                             icon: "fab fa-github",
                             target: "_blank",
                         },
                         {
                             _item: "link_3",
-                            path: "https://angel.co/",
-                            icon: "fab fa-angellist",
+                            path: "https://twitter.com/alukaard76",
+                            icon: "fab fa-twitter",
                             target: "_blank",
                         },
                     ],
-                },
-                {
-                    _item: "member_2",
-                    //   photo: require("./img/member2.jpg"),
-                    title: "Co-Founder",
-                    name: "Zeno Elea",
-                    content:
-                        "Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit",
-                },
-                {
-                    _item: "member_3",
-                    //   photo: require("./img/member3.jpg"),
-                    title: "Managing Partner",
-                    name: "Zeno Elea",
-                    content:
-                        "Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit",
-                },
-                {
-                    _item: "member_4",
-                    //   photo: require("./img/member4.jpg"),
-                    title: "Managing Partner",
-                    name: "Zeno Elea",
-                    content:
-                        "Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit",
-                },
-                {
-                    _item: "member_5",
-                    //   photo: require("./img/member5.jpg"),
-                    title: "Managing Partner",
-                    name: "Zeno Elea",
-                    content:
-                        "Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit",
-                },
-                {
-                    _item: "member_6",
-                    //   photo: require("./img/member6.jpg"),
-                    title: "Managing Partner",
-                    name: "Zeno Elea",
-                    content:
-                        "Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit",
                 },
             ],
         },
@@ -469,10 +418,10 @@ export default {
     // Contact Page
     contact: {
         hero: {
-            pretitle: "Contact Us",
-            title: "Give us a shout. Let us know how we can help.",
+            pretitle: "Contact",
+            title: "Comment nous pouvons vous aider ?",
             content:
-                "We'd love to hear about your business and find a time to discuss your needs. Fill out the form and we will be in touch shortly.",
+                "Nous aimerions connaître votre entreprise et trouver un moment pour discuter de vos besoins. Remplissez le formulaire et nous vous contacterons sous peu",
         },
         meta: {
             title: "Contact - Factor Zeno Theme",
@@ -486,23 +435,23 @@ export default {
         submit: {
             btn: "m-0",
             size: "m-0",
-            text: "Contact",
+            text: "Envoyer",
         },
         inputFormat: "vertical",
         confirm: {
-            title: "Got it!",
-            subTitle: "We’ll get back to you as soon as possible.",
+            title: "C'est fait!",
+            subTitle: "Nous vous répondrons dans les plus brefs délais.",
         },
         layout: [
             {
-                label: "Name",
+                label: "Nom",
                 _id: "name",
                 inputType: "text",
-                placeholder: "Full Name",
+                placeholder: "Prénom et Nom",
                 required: true,
             },
             {
-                label: "Work Email",
+                label: "Email",
                 _id: "email",
                 inputType: "email",
                 placeholder: "name@example.com",
@@ -512,38 +461,27 @@ export default {
                 label: "Message",
                 _id: "message",
                 inputType: "textarea",
-                placeholder: "how can we help?",
+                placeholder: "Message",
                 required: true,
             },
         ],
     },
     // Blog plugin and custom blog Settings
     blog: {
-        pretitle: "Because the future comes fast",
-        title: "Zeno Blog",
+        pretitle: "Internet ne nous attend pas",
+        title: "Blog",
         content:
-            "Discover the latest product updates, announcements, and articles from the Zeno team",
+            "Découvrez les dernières trouvailles, annonces, et articles de l'équipe",
         indexRoute: "/blog",
         postRoute: "/entry",
         limit: 6,
-        returnLinkText: "Back",
+        returnLinkText: "Retour",
         notFound: {
-            title: "No Posts",
-            subTitle: "Couldn't find any blog posts.",
+            title: "Pas d'articles",
+            subTitle: "Impossible de trouver des articles de blog. Oups!",
         },
-        promo: {
-            pretitle: "Built with Factor CMS",
-            title: "About Theme Zeno",
-            content:
-                "Zeno is a minimalist theme suited for the needs of IT companies and tech startups. Zeno styles are powered by Tailwind, a low-level CSS framework.",
-            button: {
-                link: "/about",
-                text: "Learn More",
-                classes: "btn bg-gray-100 rounded text-purple-500 hover:text-purple-600",
-            },
-        },
-        // components: {
-        //   blogIndex: (): Promise<any> => import("./blog/blog-index.vue"),
+        components: {
+          blogIndex: (): Promise<any> => import("./blog.vue"),
         //   blogSingle: (): Promise<any> => import("./blog/blog-single.vue"),
         //   featuredImage: (): Promise<any> => import("./blog/el-featured-image.vue"),
         //   title: (): Promise<any> => import("./blog/widget-title.vue"),
@@ -553,7 +491,7 @@ export default {
         //   entry: (): Promise<any> => import("./blog/widget-entry.vue"),
         //   social: (): Promise<any> => import("./blog/widget-social.vue"),
         //   pagination: (): Promise<any> => import("./blog/widget-pagination.vue"),
-        // },
+        },
         layout: {
             index: ["featuredImage", "date", "title", "author"],
             single: ["singleHeader", "entry", "social"],
