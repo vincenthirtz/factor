@@ -250,10 +250,4 @@ export default {
     background: #fff;
   }
 }
-.section-3 {
-  // background-image: url(../img/light-pattern.svg);
-}
-.section-4 {
-  // background-image: url(../img/lighter-pattern.svg);
-}
 </style>

@@ -136,9 +136,6 @@ export default {
       transform: translateY(-0.5rem);
     }
   }
-  .blog-promo {
-    // background-image: url(../img/promo.svg);
-  }
   .loader .ring-path {
     stroke: var(--color-primary);
   }

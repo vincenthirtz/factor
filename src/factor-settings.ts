@@ -494,7 +494,7 @@ export default {
         },
         layout: {
             index: ["featuredImage", "date", "title", "author"],
-            single: ["singleHeader", "entry", "social"],
+            single: ["singleHeader", "billet", "social"],
         },
         metatags: {
             index: {
