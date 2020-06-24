@@ -17,3 +17,5 @@ node_modules/
 # Service worker
 sw.*
 .history
+package-lock.json
+yarn.lock
